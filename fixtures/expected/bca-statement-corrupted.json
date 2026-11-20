@@ -1,0 +1,164 @@
+{
+  "synthetic": true,
+  "fixture": "bca-statement-corrupted",
+  "account": "1234567890",
+  "holder": "BUDI CONTOH",
+  "period": "2026-01-01 to 2026-01-31",
+  "currency": "IDR",
+  "opening_balance": 12500000,
+  "closing_balance": 32013500,
+  "note": "BCA-style layout: the Saldo column is printed on only some rows. Blank rows must be filled from the running balance chain.",
+  "transactions": [
+    {
+      "row": 1,
+      "date": "2026-01-02",
+      "description": "TRF E-BANKING CR 02012026 PT MAJU BERSAMA",
+      "debit": 0,
+      "credit": 3750000,
+      "balance_printed": 16250000
+    },
+    {
+      "row": 2,
+      "date": "2026-01-03",
+      "description": "PEMBAYARAN TOKOPEDIA",
+      "debit": 485000,
+      "credit": 0,
+      "balance_printed": null
+    },
+    {
+      "row": 3,
+      "date": "2026-01-05",
+      "description": "TARIK TUNAI ATM BCA SUDIRMAN",
+      "debit": 1000000,
+      "credit": 0,
+      "balance_printed": null
+    },
+    {
+      "row": 4,
+      "date": "2026-01-06",
+      "description": "TRF E-BANKING DB 06012026 BUDI SANTOSO",
+      "debit": 2250000,
+      "credit": 0,
+      "balance_printed": 12515000
+    },
+    {
+      "row": 5,
+      "date": "2026-01-08",
+      "description": "SETOR TUNAI CDM",
+      "debit": 0,
+      "credit": 5000000,
+      "balance_printed": null
+    },
+    {
+      "row": 6,
+      "date": "2026-01-09",
+      "description": "PEMBAYARAN LISTRIK PLN",
+      "debit": 312500,
+      "credit": 0,
+      "balance_printed": null
+    },
+    {
+      "row": 7,
+      "date": "2026-01-10",
+      "description": "TRF E-BANKING CR 10012026 CV SINAR ABADI",
+      "debit": 0,
+      "credit": 3400000,
+      "balance_printed": 25602500
+    },
+    {
+      "row": 8,
+      "date": "2026-01-12",
+      "description": "TARIK TUNAI ATM",
+      "debit": 500000,
+      "credit": 0,
+      "balance_printed": null
+    },
+    {
+      "row": 9,
+      "date": "2026-01-13",
+      "description": "PEMBAYARAN SHOPEE",
+      "debit": 175000,
+      "credit": 0,
+      "balance_printed": null
+    },
+    {
+      "row": 10,
+      "date": "2026-01-14",
+      "description": "BIAYA ADMIN",
+      "debit": 15000,
+      "credit": 0,
+      "balance_printed": 24912500
+    },
+    {
+      "row": 11,
+      "date": "2026-01-15",
+      "description": "TRF E-BANKING CR 15012026 PT NUSANTARA JAYA",
+      "debit": 0,
+      "credit": 4600000,
+      "balance_printed": null
+    },
+    {
+      "row": 12,
+      "date": "2026-01-16",
+      "description": "PEMBAYARAN INTERNET",
+      "debit": 299000,
+      "credit": 0,
+      "balance_printed": null
+    },
+    {
+      "row": 13,
+      "date": "2026-01-18",
+      "description": "TARIK TUNAI ATM",
+      "debit": 2000000,
+      "credit": 0,
+      "balance_printed": 27213500
+    },
+    {
+      "row": 14,
+      "date": "2026-01-20",
+      "description": "TRF E-BANKING DB 20012026 DEWI LESTARI",
+      "debit": 1500000,
+      "credit": 0,
+      "balance_printed": null
+    },
+    {
+      "row": 15,
+      "date": "2026-01-21",
+      "description": "SETOR TUNAI",
+      "debit": 0,
+      "credit": 2000000,
+      "balance_printed": null
+    },
+    {
+      "row": 16,
+      "date": "2026-01-22",
+      "description": "PEMBAYARAN KARTU KREDIT",
+      "debit": 1250000,
+      "credit": 0,
+      "balance_printed": 26463500
+    },
+    {
+      "row": 17,
+      "date": "2026-01-24",
+      "description": "TRF E-BANKING CR 24012026 PT CAHAYA BARU",
+      "debit": 0,
+      "credit": 6300000,
+      "balance_printed": null
+    },
+    {
+      "row": 18,
+      "date": "2026-01-26",
+      "description": "TARIK TUNAI ATM",
+      "debit": 750000,
+      "credit": 0,
+      "balance_printed": 32013500
+    }
+  ],
+  "corruption": {
+    "row": 7,
+    "field": "credit",
+    "true_value": 8400000,
+    "corrupted_value": 3400000,
+    "note": "Single-digit OCR misread (8 -> 3). The printed Saldo on the row is unchanged, so the balance chain breaks exactly here."
+  }
+}
